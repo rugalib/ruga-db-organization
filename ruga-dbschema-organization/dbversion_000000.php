@@ -14,10 +14,10 @@ return <<<"SQL"
 SET FOREIGN_KEY_CHECKS = 0;
 CREATE TABLE `{$tableName}` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `fullname` VARCHAR(255) NULL,
-  `name` VARCHAR(255) NULL DEFAULT NULL,
+  `fullname` VARCHAR(190) NULL,
+  `name` VARCHAR(190) NULL DEFAULT NULL,
   `org_type` ENUM('LEGAL', 'INFORMAL') NOT NULL DEFAULT 'LEGAL',
-  `org_subtype` VARCHAR(255) NULL DEFAULT NULL,
+  `org_subtype` VARCHAR(190) NULL DEFAULT NULL,
   `date_of_establishment` DATE NULL DEFAULT NULL,
   `date_of_dissolution` DATE NULL DEFAULT NULL,
   `remark` TEXT NULL,
